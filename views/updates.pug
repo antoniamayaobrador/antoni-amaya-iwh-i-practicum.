@@ -1,0 +1,18 @@
+doctype html
+html
+    head
+        title= title
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet", href="/css/style.css")
+    body
+        h1 Update Custom Object
+        a(href="/") Return to the homepage
+        .form-wrapper
+            form(action="/update-cobj", method="post")
+                label(for="name") Name
+                input#name(type="text", name="name", required)
+                label(for="investment") Investment
+                input#investment(type="text", name="investment")
+                label(for="known_for") Known for
+                input#known_for(type="text", name="known_for")
+                input(type="submit", value="Create record")
